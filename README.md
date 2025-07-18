@@ -1,5 +1,7 @@
 # NAPER: Fault Protection for Real-Time Resource-Constrained Deep Neural Networks
 
+Source code of our [accepted paper at IOLTS 2025](https://arxiv.org/abs/2504.06591)
+
 ## Abstract
 Fault tolerance in Deep Neural Networks (DNNs) deployed on resource-constrained systems presents unique challenges for high-accuracy applications with strict timing requirements. Memory bit-flips can severely degrade DNN accuracy, while traditional protection approaches like Triple Modular Redundancy (TMR) often sacrifice accuracy to maintain reliability, creating a three-way dilemma between reliability, accuracy, and timeliness. We introduce NAPER, a novel protection approach that addresses this challenge through ensemble learning. Unlike conventional redundancy methods, NAPER employs heterogeneous model redundancy, where diverse models collectively achieve higher accuracy than any individual model. This is complemented by an efficient fault detection mechanism and a real-time scheduler that prioritizes meeting deadlines by intelligently scheduling recovery operations without interrupting inference. Our evaluations demonstrate NAPER's superiority: 40\% faster inference in both normal and fault conditions, maintained accuracy 4.2\% higher than TMR-based strategies, and guaranteed uninterrupted operation even during fault recovery. NAPER effectively balances the competing demands of accuracy, reliability, and timeliness in real-time DNN applications.
 
